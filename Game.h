@@ -11,7 +11,7 @@ public:
     Game();
     ~Game();
 
-    void init(char title, int xpos, int ypos, int width, int height);
+    void init(const char* title, int xpos, int ypos, int width, int height);
     void eventHandler();
     void update();
     void render();

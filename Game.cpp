@@ -7,7 +7,7 @@
 Game::Game() {}
 Game::~Game() {}
 
-void Game::init(char title, int xpos, int ypos, int width, int height) {
+void Game::init(const char* title, int xpos, int ypos, int width, int height) {
     SDL_Init(SDL_INIT_EVERYTHING);
     win = SDL_CreateWindow(title, xpos, ypos, width, height, SDL_WINDOW_SHOWN);
     rnd = SDL_CreateRenderer(win, -1, 0);
@@ -46,4 +46,8 @@ void Game::clean(){
     SDL_DestroyRenderer(rnd);
     SDL_Quit();
     std::cout << "game exited" << std::endl;
+}
+
+void Game::update(){
+
 }
