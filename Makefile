@@ -1,2 +1,2 @@
 comp:
-	g++ main.cpp -lSDL2 -lSDL_image -o output
+	g++ main.cpp -lSDL2 -lSDL2_image -o output

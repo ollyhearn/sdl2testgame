@@ -23,6 +23,7 @@ private:
     SDL_Window *win;
     SDL_Renderer *rnd;
     bool isRunning = false;
+	bool direction = false;
 };
 
 #endif
